@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="/dist/output.css" rel="stylesheet">
+    <!-- <script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7ed345956a.js" crossorigin="anonymous"></script>
+
+    <!-- Title -->
+    <title>Document</title>
+    <style>
+        .img {
+            background-image: url('/flat-monsoon-season-background-with-man-standing-rain-with-umbrella_23-2149441092.avif');
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mt-10">
+        <h1 class="text-5xl font-bold text-center text-green-800 ">
+            Know The weather
+        </h1>
+
+        <div class="text-center mt-4">
+            <input id="city-name" type="text" class="w-2/3  border-2 px-4 py-2" placeholder="search from anywhere">
+            <button onclick="searchItem()"
+                class="font-medium px-4 py-2 hover:bg-gray-700 hover:text-white border rounded  border-gray-200 ">Search</button>
+        </div>
+        <div class="mt-4">
+            <h3 id="loading-text" class="text-center hidden"> Just wait a sec,Bro....</h3>
+        </div>
+        <div class="img container mx-auto">
+            <!-- <img src="/flat-monsoon-season-background-with-man-standing-rain-with-umbrella_23-2149441092.avif" alt=""> -->
+            <h1 id="capital" class=" pt-20 text-4xl text-center font-medium">
+                City-Name
+            </h1>
+            <!-- <h3 class="text-center text-2xl font-medium"><span id="tapmatra">38.6</span>&deg;C</h3> -->
+            <p class="text-center text-2xl font-medium"><span id="temparature">Temparature</span>&deg;C</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- section start -->
+    <section id="item-container" class="grid gap-4  grid-cols-3 mt-10">
+
+    </section>
+    <script src="temp.js"></script>
+</body>
+
+</html>
